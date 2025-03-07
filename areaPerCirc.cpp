@@ -6,6 +6,7 @@
 
 #include <cmath>
 #include <iostream>
+#include <iomanip>
 int main() {
     // declare the variables
     float radius, area, circumference;
@@ -17,6 +18,7 @@ int main() {
     area = M_PI * pow(radius , 2);
     circumference = 2 * M_PI * radius;
     std::cout << "\n";
+    std::cout << std::fixed << std::setprecision(2);
     // output the area and circumference
     std::cout << "The area of the circle is: "
     << area << "cm^2" << std::endl;
